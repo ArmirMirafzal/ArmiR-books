@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Mulish;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../src/assets/images/backroung.svg");
+	background-repeat: no-repeat;
+}
+
+.actions {
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.card:hover .actions {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.grid-scroll {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	flex-wrap: wrap;
+	width: 100%;
+	max-height: 600px;
+	overflow-y: auto;
+}
+
+.grid-scroll::-webkit-scrollbar {
+	width: 12px;
+}
+
+.grid-scroll::-webkit-scrollbar-track {
+	background: none;
+}
+
+.grid-scroll::-webkit-scrollbar-thumb {
+	background: none;
+	border-radius: 6px;
+}
+
+.grid-scroll::-webkit-scrollbar-thumb:hover {
+	background: none;
+}
